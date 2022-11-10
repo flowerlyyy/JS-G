@@ -1,16 +1,16 @@
-function getNumberFromUser(message){
-    let userValue;
-    let flag=false;
+// function getNumberFromUser(message){
+//     let userValue;
+//     let flag=false;
      
-    do{
-        if(flag){
-            alert('You have to enter number');
-        }
-        userValue=+prompt(message);
-        flag=true;
-    } while(isNaN(userValue)){
-    return userValue;}
-    }
+//     do{
+//         if(flag){
+//             alert('You have to enter number');
+//         }
+//         userValue=+prompt(message);
+//         flag=true;
+//     } while(isNaN(userValue)){
+//     return userValue;}
+//     }
     
     // TASK 1
     //  The user enters 1 number (A). Print all numbers from 1 to 1000 that are divisible by A.
@@ -153,3 +153,23 @@ console.log(mirror);
 //     console.log('No');
 // }
 // }
+  
+// /Task deepequal
+let equal = (c, d) => JSON.stringify(c) === JSON.stringify(d); 
+const c = { name: "Vusala",surname: "Shammadli" , age:31 }; 
+const d = { name: "Gullu", surname: "Shammadli", age:31 }; 
+ 
+if (equal(c, d)) { 
+  console.log(true); 
+} else { 
+  console.log(false); 
+}
+let equals = (a, b) => JSON.stringify(a) === JSON.stringify(b); 
+ 
+const a = {name:Mommy, age:46  }; 
+const b = {name:Mommy, age:46  }; 
+if (equals(a, b)) { 
+  console.log(true); 
+} else { 
+  console.log(false); 
+} 
