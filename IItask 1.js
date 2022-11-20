@@ -1,16 +1,16 @@
-// function getNumberFromUser(message){
-//     let userValue;
-//     let flag=false;
+function getNumberFromUser(message){
+    let userValue;
+    let flag=false;
      
-//     do{
-//         if(flag){
-//             alert('You have to enter number');
-//         }
-//         userValue=+prompt(message);
-//         flag=true;
-//     } while(isNaN(userValue)){
-//     return userValue;}
-//     }
+    do{
+        if(flag){
+            alert('You have to enter number');
+        }
+        userValue=+prompt(message);
+        flag=true;
+    } while(isNaN(userValue)){
+    return userValue;}
+    }
     
     // TASK 1
     //  The user enters 1 number (A). Print all numbers from 1 to 1000 that are divisible by A.
@@ -77,20 +77,20 @@
 // TASK 5
 // The user enters 1 positive number (N). Print the Nth number of the fibonacci series. In the fibonacci series, each next number is the sum of the previous two.
 //  The first and second are considered equal to 1.
-// const num=getNumberFromUser('Enter 1 positive number N');
-// console.log(num);
-// calculateFibonacci(num);
-// function calculateFibonacci(n){
-// let n1=1;
-// let n2=c1;
-// let sum; 
-// for(let i5=3; i5<=n ;i5++){
-// sum=n1+n2;
-// n1=n2;
-// n2=sum;
-// }
-// console.log(n2);
-// }
+const num=getNumberFromUser('Enter 1 positive number N');
+console.log(num);
+calculateFibonacci(num);
+function calculateFibonacci(n){
+let n1=1;
+let n2=1;
+let sum; 
+for(let i5=3; i5<=n ;i5++){
+sum=n1+n2;
+n1=n2;
+n2=sum;
+}
+console.log(n2);
+}
 
 // TASK 6
 // The user enters 2 numbers. Find their greatest common divisor using Euclid's algorithm. (yes, you've got to google this algorithm at first :D ).
@@ -110,18 +110,19 @@
 // }
 
 // TASK 7
-// The user enters 1 number. Find a number that is a mirror image of the sequence of digits of a given number, for example, given the number 123, output is 321 in this case.
-let m=getNumberFromUser('Enter 1number M');
-console.log(m);
-let mirror=0;
-let r;
-while(m!=0){        
-r=m%10;
-mirror=mirror*10+ r;
-m=(m-r)/10;
+// The user enters 1 number. Find a number that is a mirror image of the sequence of digits of a given number, for example,
+//  given the number 123, output is 321 in this case.
+// let m=getNumberFromUser('Enter 1number M');
+// console.log(m)
+// let mirror=0;
+// let r;
+// while(m!=0){        
+// r=m%10;
+// mirror=mirror*10+ r;
+// m=(m-r)/10;
 
-}
-console.log(mirror);
+// }
+// console.log(mirror);
 
 
 // TASK 8
@@ -155,21 +156,21 @@ console.log(mirror);
 // }
   
 // /Task deepequal
-let equal = (c, d) => JSON.stringify(c) === JSON.stringify(d); 
-const c = { name: "Vusala",surname: "Shammadli" , age:31 }; 
-const d = { name: "Gullu", surname: "Shammadli", age:31 }; 
+// let equal = (c, d) => JSON.stringify(c) === JSON.stringify(d); 
+// const c = { name: "Vusala",surname: "Shammadli" , age:31 }; 
+// const d = { name: "Gullu", surname: "Shammadli", age:31 }; 
  
-if (equal(c, d)) { 
-  console.log(true); 
-} else { 
-  console.log(false); 
-}
-let equals = (a, b) => JSON.stringify(a) === JSON.stringify(b); 
+// if (equal(c, d)) { 
+//   console.log(true); 
+// } else { 
+//   console.log(false); 
+// }
+// let equals = (a, b) => JSON.stringify(a) === JSON.stringify(b); 
  
-const a = {name:Mommy, age:46  }; 
-const b = {name:Mommy, age:46  }; 
-if (equals(a, b)) { 
-  console.log(true); 
-} else { 
-  console.log(false); 
-} 
+// const a = {name:Mommy, age:46  }; 
+// const b = {name:Mommy, age:46  }; 
+// if (equals(a, b)) { 
+//   console.log(true); 
+// } else { 
+//   console.log(false); 
+// } 
